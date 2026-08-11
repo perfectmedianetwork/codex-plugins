@@ -1,0 +1,20 @@
+{
+  "name": "remixhub",
+  "interface": {
+    "displayName": "RemixHub"
+  },
+  "plugins": [
+    {
+      "name": "lark-mcp",
+      "source": {
+        "source": "local",
+        "path": "./plugins/lark-mcp"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

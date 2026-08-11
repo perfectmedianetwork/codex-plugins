@@ -1,0 +1,28 @@
+{
+  "name": "lark-mcp",
+  "version": "1.0.1",
+  "description": "Connect Codex to Lark with per-user OAuth.",
+  "author": {
+    "name": "RemixHub",
+    "url": "https://larkmcp.remixhub.vip/"
+  },
+  "homepage": "https://larkmcp.remixhub.vip/",
+  "repository": "https://github.com/perfectmedianetwork/codex-plugins",
+  "keywords": ["lark", "mcp", "documents", "tasks", "messaging"],
+  "interface": {
+    "displayName": "Lark MCP",
+    "shortDescription": "Use Lark securely from Codex.",
+    "longDescription": "Connect Codex to Lark documents, wiki, Base, messages, contacts, Drive permissions, and tasks. Every user signs in with their own Lark account through OAuth; the Lark App Secret remains on the server.",
+    "developerName": "RemixHub",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "websiteURL": "https://larkmcp.remixhub.vip/",
+    "defaultPrompt": [
+      "Summarize my recent Lark documents.",
+      "Find my Lark tasks due this week.",
+      "Search Lark and help me update the right item."
+    ],
+    "brandColor": "#3370FF"
+  },
+  "mcpServers": "./.mcp.json"
+}
