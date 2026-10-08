@@ -13,6 +13,12 @@ Available tool groups include Lark messaging, Base, documents, wiki, contacts,
 Drive permissions, task create/read/update/delete operations, follower
 management, and shared tasklist creation/membership/listing operations.
 
+The company-directory tools are read-only and cover listing child departments,
+reading one department, listing a department's direct members, and reading one
+user's basic profile. The plugin does not expose contact create, update, or
+delete operations. Results remain limited by each signed-in user's Lark data
+visibility.
+
 Lark does not expose a tenant-wide administrator override for all standalone
 tasks. For a company-wide view, use a shared tasklist, grant the company group
 or relevant employees access, and add company tasks to that list. The MCP can
