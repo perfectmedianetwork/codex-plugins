@@ -10,7 +10,13 @@ never distributed with the plugin and remains stored as a Docker secret on the
 server.
 
 Available tool groups include Lark messaging, Base, documents, wiki, contacts,
-Drive permissions, and task create/read/update/delete operations.
+Drive permissions, task create/read/update/delete operations, follower
+management, and shared tasklist creation/membership/listing operations.
+
+Lark does not expose a tenant-wide administrator override for all standalone
+tasks. For a company-wide view, use a shared tasklist, grant the company group
+or relevant employees access, and add company tasks to that list. The MCP can
+then enumerate the list and its tasks with the caller's own Lark permissions.
 
 Users must be included in the Lark application's availability scope before they
 can authorize the plugin.
