@@ -13,6 +13,13 @@ Available tool groups include Lark messaging, Base, documents, wiki, contacts,
 Drive permissions, task create/read/update/delete operations, follower
 management, and shared tasklist creation/membership/listing operations.
 
+The message screenshot reader accepts a group `chat_id`, `message_id`, and the
+message's `image_key`, then returns native MCP image content for visual
+analysis. It is read-only and checks the signed-in user's current group
+membership, the message's group, and the resource key before downloading.
+Supported formats are PNG, JPEG, WebP, and GIF up to 10 MiB. The bot must also
+belong to the group.
+
 The company-directory tools are read-only and cover listing child departments,
 reading one department, listing a department's direct members, and reading one
 user's basic profile. The plugin does not expose contact create, update, or
